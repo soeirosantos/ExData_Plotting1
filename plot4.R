@@ -9,7 +9,7 @@ par(mfrow = c(2, 2))
 plot(hpc$Datetime , hpc$Global_active_power, 
      type = "l",
      xlab = "",
-     ylab = "Global Active Power (kilowatts)")
+     ylab = "Global Active Power")
 
 plot(hpc$Datetime , hpc$Voltage, 
      type = "l",
@@ -38,6 +38,7 @@ legend("topright",
 plot(hpc$Datetime , 
      hpc$Global_reactive_power, 
      type = "l",
-     xlab = "datetime")
+     xlab = "datetime",
+     ylab= "Global_reactive_power")
 
 dev.off()
